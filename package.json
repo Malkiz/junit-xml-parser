@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "parse junit xml report to json format",
   "main": "index.js",
+  "repository": "http://github.com/Malkiz/junit-xml-parser",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
