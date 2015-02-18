@@ -26,7 +26,7 @@
 				current.testsuite.properties[attrs.name] = attrs.value;
 			},
 			testcase: function(attrs, prefix, uri, namespaces) {
-				var name = attrs.fullName || attrs.name;
+				var name = attrs.classname + attrs.name;
 				if (current.testcases[name]) {
 					current.testcases[name].duplicates = (current.testcases[name].duplicates || 0) + 1;
 					out.log('WARNING: duplicate test name: ' + name);
