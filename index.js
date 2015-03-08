@@ -38,6 +38,9 @@
 			skipped: function(attrs, prefix, uri, namespaces) {
 				current.testcase.skipped = true;
 			},
+			failure: function(attrs, prefix, uri, namespaces) {
+				current.testcase.failure = true;
+			},
 			'system-out': noop,
 			'system-err': noop,
 			'testsuites': noop
